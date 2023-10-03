@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+# Author - Tolulope Fakunle
+
 def islower(c):
-    for i in range(97, 123):
-        if '{:c}'.format(i) == c:
-            return True
-    return False
+    """Function checks for lowercase characters."""
+    if ord(c) >= 97 and ord(c) <= 122:
+        return True
+    else:
+        return False
