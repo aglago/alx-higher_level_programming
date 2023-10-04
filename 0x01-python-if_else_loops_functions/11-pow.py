@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# Author -Bamidele Adefolaju
 
+# AUTHOR - Ami Manye
+
+# returns power of 2 numbers
 def pow(a, b):
     return (a ** b)
