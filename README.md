@@ -26,8 +26,9 @@ The repository is structured into different directories, each corresponding to a
 
 ## Topics Covered
 The repository has covered the following low level programming in C topics so far:
-+ [0. 0x00. Python - Hello, World](./0x00-python-hello_world)
-+ [1, 0x01. Python - if/else, loops, functions](./0x01-python-if_else_loops_functions)
++ [0x00. Python - Hello, World](./0x00-python-hello_world)
++ [0x01. Python - if/else, loops, functions](./0x01-python-if_else_loops_functions)
++ [0x02. Python - import & modules](./0x02-python-import_modules)
 
 ## Contributing
 Contributions to this repository are welcome! If you'd like to contribute, please follow these steps:
