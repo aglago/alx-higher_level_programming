@@ -3,11 +3,10 @@
 # AUTHOR - Ami Manye
 
 # print argv and argc
-if __name__ ==  '__main__':
+if __name__ == '__main__':
     import sys
 
     '''print number of arguments'''
-
     if len(sys.argv) == 1:
         print('{} arguments.'.format(0))
     elif len(sys.argv) == 2:
