@@ -6,8 +6,7 @@ def print_reversed_list_integer(my_list=[]):
     '''print list passed in reverse order'''
 
     '''reverse'''
-    my_list.reverse()
-
-    '''print elements'''
-    for elem in my_list:
-        print('{}'.format(elem))
+    idx = len(my_list) - 1;
+    while idx >= 0:
+        print('{}'.format(my_list[idx]))
+        idx -= 1
