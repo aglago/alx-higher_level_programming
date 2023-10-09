@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+# AUTHOR - Ami Manye
+
+def replace_in_list(my_list, idx, element):
+    '''replace element at idx in my_list'''
+
+    my_list[idx] = element
+
+    return my_list
