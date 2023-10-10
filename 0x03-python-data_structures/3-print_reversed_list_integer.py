@@ -4,6 +4,10 @@
 
 def print_reversed_list_integer(my_list=[]):
     '''print list passed in reverse order'''
+    
+    '''if list is None'''
+    if my_list == None:
+        return
 
     '''reverse'''
     idx = len(my_list) - 1
