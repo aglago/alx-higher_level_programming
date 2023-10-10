@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+
+# AUTHOR - Ami Manye
+
 def divisible_by_2(my_list=[]):
-    new_list = []
-    for i in range(len(my_list)):
-        if my_list[i] % 2 == 0:
-            new_list.append(True)
+    '''check for divisibility by 2'''
+
+    lst = []
+    for num in my_list:
+        if num % 2 == 0:
+            lst.append(True)
         else:
-            new_list.append(False)
-    return new_list
+            lst.append(False)
+    return(lst)
