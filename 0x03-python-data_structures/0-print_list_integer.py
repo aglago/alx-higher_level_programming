@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+# AUTHOR - Ami Manye
+
 def print_list_integer(my_list=[]):
-    for i in range(len(my_list)):
-        print("{:d}".format(my_list[i]))
+    '''print elements of list: my_list'''
+
+    for elem in my_list:
+        print('{}'.format(int(elem)))
