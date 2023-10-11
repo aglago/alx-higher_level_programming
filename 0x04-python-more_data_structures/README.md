@@ -8,4 +8,6 @@
 - function that replaces all occurrences of an element by another in a new list.
 - solved with list comprehension, yay ! :)
 
-#### []()
+#### [2-uniq_add.py](./2-uniq_add.py)
+- function that adds all unique integers in a list (only once for each integer)
+- converted to set then back to list
