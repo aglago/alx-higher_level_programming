@@ -4,4 +4,8 @@
 - I realized from here that the `map` function is typically used on 1d iterables
 - `map` function is not to perform nested iterations and operations
 
+#### [1-search_replace.py](./1-search_replace.py)
+- function that replaces all occurrences of an element by another in a new list.
+- solved with list comprehension, yay ! :)
+
 #### []()
