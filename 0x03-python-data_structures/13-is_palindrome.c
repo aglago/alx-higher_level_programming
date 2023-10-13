@@ -1,72 +1,47 @@
 #include "lists.h"
 
 /**
- * reverse_listint - reverses a linked list
- * @head: pointer to the first node in the list
+ * is_palindrome - is a linked list palindromic ?
+ * @head: head of list passed into function
+ * Return: 1 if palindromic and 0 if not
  *
- * Return: pointer to the first node in the new list
- */
-void reverse_listint(listint_t **head)
-{
-	listint_t *prev = NULL;
-	listint_t *current = *head;
-	listint_t *next = NULL;
-
-	while (current)
-	{
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
-	}
-
-	*head = prev;
-}
-
-/**
- * is_palindrome - checks if a linked list is a palindrome
- * @head: double pointer to the linked list
- *
- * Return: 1 if it is, 0 if not
+ * AUTHOR - Ami Manye
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *slow = *head, *fast = *head, *temp = *head, *dup = NULL;
+	int i = 0, rev_i = 0, check_i = 0, nodes_int[1024], rev_nodes_int[1024];
+	listint_t *curr = NULL;
 
-	if (*head == NULL || (*head)->next == NULL)
-		return (1);
+	if (*head == NULL)
+		return (0);
 
-	while (1)
+	/* traverse list to insert each node value into array */
+	curr = *head;
+	while (curr)
 	{
-		fast = fast->next->next;
-		if (!fast)
-		{
-			dup = slow->next;
-			break;
-		}
-		if (!fast->next)
-		{
-			dup = slow->next->next;
-			break;
-		}
-		slow = slow->next;
+		nodes_int[i] = curr->n;
+		/*printf("nodes_int[%d] = %d\n", i, nodes_int[i]);*/
+		i++;
+		curr = curr->next;
 	}
+	/*printf("Number of nodes are: %d\n", i);*/
 
-	reverse_listint(&dup);
-
-	while (dup && temp)
+	/* loop through array and put its values into rev array */
+	/*printf("i at this point is: %d\n", i);*/
+	i--;
+	while (i >= 0)
 	{
-		if (temp->n == dup->n)
+		/*printf("i inside the loop is: %d\n", i);*/
+		rev_nodes_int[rev_i] = nodes_int[i];
+		/*printf("rev_nodes_int[%d] = %d\n", rev_i, rev_nodes_int[rev_i]);*/
+		if (rev_nodes_int[rev_i] != nodes_int[check_i])
 		{
-			dup = dup->next;
-			temp = temp->next;
-		}
-		else
+			/*printf("rev_nodes_int[%d]: %d != nodes_int[%d]: \n", rev_i, rev_nodes_int[rev_i], check_i, nodes_int[check_i]);*/
 			return (0);
+		}
+		i--;
+		rev_i++;
+		check_i++;
 	}
-
-	if (!dup)
-		return (1);
-
-	return (0);
+	return (1);
 }
