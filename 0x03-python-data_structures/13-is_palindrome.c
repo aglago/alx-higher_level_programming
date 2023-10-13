@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	listint_t *curr = NULL;
 
 	if (*head == NULL)
-		return (0);
+		return (1);
 
 	/* traverse list to insert each node value into array */
 	curr = *head;
