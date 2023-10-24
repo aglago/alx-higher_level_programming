@@ -18,11 +18,9 @@ def safe_print_list(my_list=[], x=0):
     for element in my_list:
         try:
             print(f'{element}', end='')
+            elements_printed += 1
         except exception as e:
             print(e)
-            print()
-        else: # if no exception throws
-            elements_printed += 1
         if elements_printed == x:
             print()
             return elements_printed
