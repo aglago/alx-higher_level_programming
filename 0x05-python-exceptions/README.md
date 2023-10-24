@@ -2,11 +2,11 @@
 
 - Task 1
 	- filename: [0-safe_print_list.py](./0-safe_print_list.py) 
-	- function: 
+	- function: safe prints elements in a list 
 
 - Task 2
-	- filename: []()
-	- function: 
+	- filename: [1-safe_print_integer.py](./1-safe_print_integer.py)
+	- function: prints an integer with `"{:d}".format()`
 - Task 1
         - filename: []()
         - function: 
