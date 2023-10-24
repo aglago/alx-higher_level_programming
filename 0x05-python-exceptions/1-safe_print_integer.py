@@ -1,17 +1,13 @@
 #!/usr/bin/python3
 
+# AUTHOR - Ami Manye
+
 def safe_print_integer(value):
-    """Print an integer with "{:d}".format().
+    """prints an integer with "{:d}".format()"""
+    """returns true if integer and false if not"""
 
-    Args:
-        value (int): The integer to print.
-
-    Returns:
-        If a TypeError or ValueError occurs - False.
-        Otherwise - True.
-    """
     try:
         print("{:d}".format(value))
-        return (True)
-    except (TypeError, ValueError):
-        return (False)
+        return True
+    except Exception as e:
+        return False
