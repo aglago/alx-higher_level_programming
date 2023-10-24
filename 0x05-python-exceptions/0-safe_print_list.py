@@ -12,7 +12,7 @@ def safe_print_list(my_list=[], x=0):
         return 0
 
     # track elements printed
-    elements_printed = 0;
+    elements_printed = 0
 
     # iterate through list and print elements
     for element in my_list:
