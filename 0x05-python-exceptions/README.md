@@ -19,6 +19,18 @@
         - filename: [4-list_division.py](./4-list_division.py)
         - function: divides element by elements 2 lists
 
+- Task 5
+        - filename: [5-raise_exception.py](./5-raise_exception.py)
+        - function: rasises a type exception
+- Task 6
+        - filename: [6-raise_exception_msg.py](./6-raise_exception_msg.py)
+        - function: raise a name exception
 - Task 2
         - filename: []()
-        - function: 
+        - function:
+- Task 2
+        - filename: []()
+        - function:
+- Task 2
+        - filename: []()
+        - function:
