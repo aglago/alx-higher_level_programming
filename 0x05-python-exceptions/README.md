@@ -13,8 +13,8 @@
         - function: prints the first x integers of a list
 
 - Task 2
-        - filename: []()
-        - function: 
+        - filename: [3-safe_print_division.py](./3-safe_print_division.py)
+        - function: function that divides 2 integers and prints the results
 - Task 1
         - filename: []()
         - function: 
