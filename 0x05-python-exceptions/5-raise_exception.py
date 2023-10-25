@@ -1,5 +1,7 @@
-#!/usr/bin/python3
+#/usr/bin/python3
+
+# AUTHOR - Ami Manye
 
 def raise_exception():
-    """Raise a TypeError exception."""
-    raise TypeError
+    """raise an exception"""
+    raise TypeError()
