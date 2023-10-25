@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 
+# AUTHOR - Ami Manye
+
 def safe_print_division(a, b):
-    """Returns the division of a by b."""
+    """function that divides 2 integers and prints the results"""
+    div = None
     try:
         div = a / b
-    except (TypeError, ZeroDivisionError):
-        div = None
+    except Exception:
+        return
     finally:
-        print("Inside result: {}".format(div))
-    return (div)
+        if div is not None:
+            print('Inside result: {:f}'.format(div))
+    return div
