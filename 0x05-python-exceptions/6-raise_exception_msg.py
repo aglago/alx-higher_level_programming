@@ -1,5 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+
+# AUTHOR - Ami Manye
 
 def raise_exception_msg(message=""):
-    """Raise a NameError exception with a message."""
+    """raises a name exception with a message"""
     raise NameError(message)
