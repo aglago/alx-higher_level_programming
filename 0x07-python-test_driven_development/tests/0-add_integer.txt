@@ -5,7 +5,7 @@ function: ```def add_integer(a, b=98)```
 =======================================================
 
 # First let's import the function 
->>> from add_integer import add_integer
+>>> from 0-add_integer import add_integer
 
 # Test for if a is float
 >>> add_integer(5.3,7)
