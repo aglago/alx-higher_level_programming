@@ -1,17 +1,33 @@
 #!/usr/bin/python3
-"""Defines an integer addition function."""
 
+# AUTHOR - Ami Manye
+
+"""
+This is a python module defines a function ```add_integer```
+"""
 
 def add_integer(a, b=98):
-    """Return the integer addition of a and b.
-
-    Float arguments are typecasted to ints before addition is performed.
-
-    Raises:
-        TypeError: If either of a or b is a non-integer and non-float.
     """
-    if ((not isinstance(a, int) and not isinstance(a, float))):
-        raise TypeError("a must be an integer")
-    if ((not isinstance(b, int) and not isinstance(b, float))):
-        raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+    This function adds 2 numbers together
+
+    Parameters:
+        a (int): The first number.
+        b (int): The second number.
+
+    Returns:
+        int: The sum of a and b
+    """
+    if not isinstance(a, (int, float)):
+        raise TypeError('a must be an integer')
+    elif not isinstance(b, (int, float)):
+        raise TypeError('b must be an integer')
+    elif isinstance(a, float):
+        a = int(a)
+    elif isinstance(b, float):
+        b = int(b)
+
+    return a + b
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testfile('0_add_integer.txt')
