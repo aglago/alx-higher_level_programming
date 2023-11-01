@@ -6,6 +6,7 @@
 This is a python module defines a function ```add_integer```
 """
 
+
 def add_integer(a, b=98):
     """
     This function adds 2 numbers together
@@ -27,6 +28,7 @@ def add_integer(a, b=98):
         b = int(b)
 
     return a + b
+
 
 if __name__ == '__main__':
     import doctest
