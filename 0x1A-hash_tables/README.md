@@ -1,7 +1,30 @@
 # Hash tables in C
 
 ## Files in this directory and what they do
+### Task 0
+- File: 
+- Function: 
+- Notes: 
 
+### Task 1
+- File: [1-djb2.c](./1-djb2.c)
+- Function: defines a hash function depending on the DJB2 algorithm
+- Notes:
+The DJB2 (Daniel J. Bernstein 2) hash function is a simple and widely used hash function that is known for its speed and simplicity. It's often used in various applications, including hash tables and string hashing. While it's a decent hash function, it's important to note its characteristics and limitations:
+
+Pros:
+1. Speed: DJB2 is quite fast due to its simple bitwise operations and multiplication.
+
+2. Simplicity: The implementation is straightforward, making it easy to understand and use.
+
+Cons:
+1. Not Cryptographically Secure: DJB2 is not suitable for cryptographic applications as it's vulnerable to hash collision attacks. It's not designed to resist malicious attempts to find two different inputs that produce the same hash.
+
+2. Limited Distribution of Output: DJB2 has a somewhat limited distribution of hash values, which means that it may not evenly distribute keys in a hash table. This can lead to clustering and suboptimal performance in certain cases.
+
+3. Limited Avalanche Effect: It may not have a strong avalanche effect, meaning small changes in the input may not produce significantly different hash values.
+
+For non-cryptographic use cases where security isn't a concern, DJB2 can be a good choice due to its speed and simplicity. However, for cryptographic applications or when a more robust hash function is needed, consider using stronger alternatives like SHA-256 or SHA-3. Additionally, for hash tables with a risk of collision, you may want to use a more advanced hash function to improve distribution and reduce clustering.
 
 ## Learning Objectives
 ### What is a hash function ?
