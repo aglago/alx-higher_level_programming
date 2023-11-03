@@ -1,5 +1,9 @@
-# Learning Objectives
-## General
+# Hash tables in C
+
+## Files in this directory and what they do
+
+
+## Learning Objectives
 ### What is a hash function ?
 A hash function is a mathematical function that takes an input (or "message") and returns a fixed-size string of characters, which is typically a hexadecimal number. The output, often referred to as the hash code or hash value, is a unique representation of the input data. Hash functions are commonly used in computer science and cryptography for various purposes, including data indexing, data retrieval, and data integrity verification.
 
@@ -114,6 +118,3 @@ Hash tables are versatile data structures and find applications in a wide range 
 16. **Frequency Analysis:** Hash tables can be used for frequency analysis in various applications, such as text processing, image processing, and signal analysis.
 
 These are just a few examples of the many use cases for hash tables. Hash tables provide efficient data storage and retrieval, making them a fundamental data structure in computer science and software engineering. They are chosen for their fast lookup times and versatility in various problem domains.
-
-## Files in this directory and what they do
-
