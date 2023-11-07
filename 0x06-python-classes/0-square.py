@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-"""Define a class Square."""
-
+# AUTHOR - Ami Manye
 
 class Square:
-    """Represent a square."""
     pass
