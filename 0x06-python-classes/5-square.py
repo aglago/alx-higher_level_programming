@@ -36,6 +36,7 @@ class Square:
         return res
 
     def my_print(self):
+        '''printing a number of #'''
         if self.__size == 0:
             print()
             return
