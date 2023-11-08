@@ -61,7 +61,9 @@ class Rectangle:
         '''defines a string representation of the rectangle'''
         rect = ''
         for i in range(self.__height):
-            for i in range(self.__width):
+            for j in range(self.__width):
                 rect += '#'
-            rect += '\n'
+            if i < self.__height - 1:
+                rect += '\n'
+        #rect -= '\n'
         return rect
