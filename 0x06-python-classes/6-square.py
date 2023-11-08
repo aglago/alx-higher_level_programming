@@ -41,7 +41,7 @@ class Square:
         istuple = isinstance(value, tuple) and len(value)
         istwo = len(value) != 2
         itemisint = all(isinstance(item, int) for item in value)
-        if not istuple or istwo or not itemisint:
+        if not istuple and istwo and not itemisint:
             raise TypeError('position must be a tuple of 2 positive integers')
 
     def area(self):
