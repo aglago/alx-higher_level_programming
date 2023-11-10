@@ -17,8 +17,6 @@ ALX is a comprehensive software engineering program designed to provide practica
 ## Introduction
 This repository serves as a central hub for storing and organizing the high-level programming tasks completed during the ALX Software Engineering program. Each task represents a specific challenge or project that was assigned as part of the curriculum, helping students gain a deeper understanding of C programming and related concepts.
 
-If you are currently enrolled in the ALX Software Engineering program, this repository can be an invaluable resource for studying and reviewing high-level programming concepts. You can explore the different task directories, examine the code solutions, and gain insights into high-level memory manipulation and system-level programming.
-
 Feel free to clone or download this repository to your local machine to have a local copy of the solved tasks. You can then navigate through the directories, review the code, and experiment with the solutions.
 
 ## Structure
