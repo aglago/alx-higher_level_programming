@@ -9,9 +9,11 @@ from models.base import Base
 
 class Rectangle(Base):
     '''Represents a rectangle'''
+
+    # init method
+
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-
         '''error checking for width'''
         if not isinstance(width, int):
             raise TypeError('width must be an integer')
@@ -40,6 +42,8 @@ class Rectangle(Base):
             raise ValueError('y must be >= 0')
         self.__y = y
 
+    # properties
+
     @property
     def width(self):
         '''getter function for width'''
@@ -59,6 +63,8 @@ class Rectangle(Base):
     def y(self):
         '''getter function for y'''
         return self.__y
+
+    # property setters
 
     @width.setter
     def width(self, value):
@@ -95,3 +101,9 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError('y must be >= 0')
         self.__y = value
+
+
+    # public methods
+
+    def area(self):
+        return self.__width * self.__height
