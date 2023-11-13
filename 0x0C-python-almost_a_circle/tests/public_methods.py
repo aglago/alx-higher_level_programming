@@ -16,6 +16,7 @@ class TestPublicMethodsRectangle(unittest.TestCase):
     '''Representing a test public method blueprint'''
 
     # testing area
+
     def test_area(self):
         '''testing for rectangle area'''
 
@@ -24,6 +25,7 @@ class TestPublicMethodsRectangle(unittest.TestCase):
 
 
     # testing display
+
     def test_display(self):
         '''testing for drawing rectangle with #'''
         
@@ -33,7 +35,6 @@ class TestPublicMethodsRectangle(unittest.TestCase):
             expected_output = '##\n##\n##\n##\n##\n'
             self.assertEqual(expected_output, captured.getvalue())
 
-    # testing display considering x and y
     def test_display_xy(self):
         '''printing the rectangle with # considering the values of x and y'''
         r = Rectangle(2, 3, 2, 2)
@@ -55,7 +56,6 @@ class TestPublicMethodsRectangle(unittest.TestCase):
             self.assertEqual(expected, captured.getvalue())
 
 
-    # testing display with incorrect initializing input
     def test_display_incorrect(self):
         '''testing with incorrect class initialization input'''
 
@@ -65,6 +65,24 @@ class TestPublicMethodsRectangle(unittest.TestCase):
 
             expected_output = '###\n'
             self.assertEqual(expected_output, captured.getvalue())
+
+    # testing update method
+
+    def test_update_len(self):
+        '''testing the update public method using *args :: length'''
+        r = Rectangle(2, 4)
+        r.update(1, 6, 3)
+        self.assertEqual(2, r.width)
+
+    def test_update_non_int(self):
+        '''testing the update public method using :: correct values'''
+        r = Rectangle(2, 4)
+        r.update(12, 6, 3, 1, 1)
+        self.assertEqual(12, r.id)
+        self.assertEqual(6, r.width)
+        self.assertEqual(3, r.height)
+        self.assertEqual(1, r.x)
+        self.assertEqual(1, r.y)
 
 
 if __name__ == '__main__':
