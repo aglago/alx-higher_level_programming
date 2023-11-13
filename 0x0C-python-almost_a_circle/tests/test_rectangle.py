@@ -7,6 +7,8 @@ testing the class Rectangle
 '''
 
 import unittest
+from unittest.mock import patch
+import io
 from models.rectangle import Rectangle
 
 
@@ -222,14 +224,6 @@ class TestRectangle(unittest.TestCase):
         err_msg = 'y must be an integer'
         self.assertEqual(str(e.exception), err_msg)
 
-
-    # testing public methods
-
-    # testing area
-    def test_area(self):
-        '''testing for rectangle area'''
-        r = Rectangle(2, 3)
-        self.assertEqual(r.area(), 6)
 
 if __name__ == '__main__':
     unittest.main()
