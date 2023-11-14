@@ -122,6 +122,6 @@ class Rectangle:
         Rectangle: Rectangle instance with height and width equal to size
         '''
         if not isinstance(size, int):
-            raise ValueError()
+            raise TypeError('width must be an integer')
 
         return Rectangle(size, size)
