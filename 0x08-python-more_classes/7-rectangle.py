@@ -69,7 +69,6 @@ class Rectangle:
 
     def __str__(self):
         '''defines a string representation of the rectangle'''
-        print('the print symbol is: ', self.print_symbol)
         if self.__width == 0 or self.__height == 0:
             return ''
 
