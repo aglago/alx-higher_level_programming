@@ -2,4 +2,4 @@
 -- dissplays number of records based on condition
 
 SELECT * FROM first_table
-WHERE id=89
+WHERE id=89;
