@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const len = +process.argv[2]
+const len = +process.argv[2];
 
 if (isNaN(len)) {
   console.log('Missing number of occurrences');
