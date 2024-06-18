@@ -9,7 +9,7 @@ if (isNaN(len)) {
 
   for (let i = 0; i < len; i++) {
     for (let k = 0; k < len; k++) {
-      square = square + '#';
+      square = square + 'X';
     }
 
     if (i < len - 1) {
