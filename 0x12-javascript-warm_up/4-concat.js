@@ -1,13 +1,8 @@
 #!/usr/bin/node
 
-let arg = '';
-const len = process.argv.length;
+const firstArg = process.argv[2] ? process.argv[2] : undefined;
+const format = ' is ';
+const secondArg = process.argv[3] ? process.argv[3] : undefined;
+const sentence = firstArg + format + secondArg;
 
-for (let i = 2; i < len; i++) {
-  arg = arg + process.argv[i];
-
-  if (i < len - 1) {
-    arg = arg + ' ';
-  }
-}
-console.log(arg);
+console.log(sentence);
