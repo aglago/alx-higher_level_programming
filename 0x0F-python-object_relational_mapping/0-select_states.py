@@ -7,27 +7,28 @@ import sys
 This script connects to a MySQL database and retrieves all records from the 'states' table.
 '''
 
-hostname = 'localhost'
-username = sys.argv[1]
-password = sys.argv[2]
-database_name = sys.argv[3]
+if __name__ == '__main__':
+    hostname = 'localhost'
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database_name = sys.argv[3]
 
-conn = MySQLdb.connect(
-  host=hostname,
-  user=username,
-  passwd=password,
-  db=database_name
-)
+    conn = MySQLdb.connect(
+        host=hostname,
+        user=username,
+        passwd=password,
+        db=database_name
+    )
 
-cursor = conn.cursor()
+    cursor = conn.cursor()
 
-query = 'SELECT * FROM states'
+    query = 'SELECT * FROM states'
 
-cursor.execute(query)
+    cursor.execute(query)
 
-rows = cursor.fetchall()
-for row in rows:
-    print(row)
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
 
-cursor.close()
-conn.close()
+    cursor.close()
+    conn.close()
