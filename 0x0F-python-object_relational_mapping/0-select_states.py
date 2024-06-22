@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     # query = 'SELECT * FROM states'
 
-    cursor.execute('SELECT * FROM states')
+    cursor.execute("SELECT * FROM states")
 
     rows = cursor.fetchall()
     for row in rows:
