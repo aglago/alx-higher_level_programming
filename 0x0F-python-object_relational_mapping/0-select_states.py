@@ -22,9 +22,9 @@ if __name__ == '__main__':
 
     cursor = conn.cursor()
 
-    query = 'SELECT * FROM states'
+    # query = 'SELECT * FROM states'
 
-    cursor.execute(query)
+    cursor.execute('SELECT * FROM states')
 
     rows = cursor.fetchall()
     for row in rows:
