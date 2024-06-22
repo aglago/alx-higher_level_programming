@@ -11,16 +11,11 @@ table.
 '''
 
 if __name__ == "__main__":
-    hostname = "localhost"
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database_name = sys.argv[3]
-
     conn = MySQLdb.connect(
-        host=hostname,
-        user=username,
-        passwd=password,
-        db=database_name,
+        host="localhost",
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3],
         port=3306
     )
 
