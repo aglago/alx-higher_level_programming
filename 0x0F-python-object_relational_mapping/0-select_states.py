@@ -20,7 +20,8 @@ if __name__ == '__main__':
         host=hostname,
         user=username,
         passwd=password,
-        db=database_name
+        db=database_name,
+        port=3306
     )
 
     cursor = conn.cursor()
