@@ -15,7 +15,8 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
 
     # establishing connection with the database
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".format(username, password, db_name))
+    conn_str = "mysql+mysqldb://{}:{}@localhost:3306/{}"
+    engine = create_engine(conn_str.format(username, password, db_name))
 
     # database tracker
     Session = sessionmaker(bind=engine)
