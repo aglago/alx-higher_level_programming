@@ -24,7 +24,9 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
 
-    query = "SELECT cities.id, cities.name, states.name AS state FROM cities JOIN states ON cities.state_id = states.id LIMIT 15"
+    query = "SELECT cities.id, cities.name, states.name\
+            AS state FROM cities JOIN states ON cities\
+            .state_id = states.id LIMIT 15"
     cursor.execute(query)
     rows = cursor.fetchall()
 
