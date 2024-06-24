@@ -1,26 +1,20 @@
 #!/usr/bin/python3
-
 """
-A representation of python
-connecting to the database
-and performing data driven
-queries
+Contains State class and Base, an instance of declarative_base()
 """
-
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Sequence
+from sqlalchemy.orm import relationship
 
-Base = declarative_base()
+mymetadata = MetaData()
+Base = declarative_base(metadata=mymetadata)
 
 
 class State(Base):
-    """Representing a table in database"""
-    __tablename__ = "states"
-
-    id = Column(Integer,
-                Sequence('id_seq'),
-                primary_key=True,
-                nullable=False)
-    name = Column(String(128),
-                  nullable=False)
+    """
+    Class with id and name attributes of each state
+    """
+    __tablename__ = 'states'
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    name = Column(String(128), nullable=False)
     cities = relationship("City", backref="states")
