@@ -13,13 +13,13 @@ from sqlalchemy import Column, Integer, String, Sequence
 Base = declarative_base()
 
 
-class States(Base):
+class State(Base):
     """Representing a table in database"""
     __tablename__ = "states"
 
     id = Column(Integer,
+                Sequence('id_seq'),
                 primary_key=True,
-                nullable=False,
-                Sequence('id_seq'))
+                nullable=False)
     name = Column(String(128),
                   nullable=False)
