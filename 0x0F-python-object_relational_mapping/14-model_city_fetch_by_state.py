@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+listing all cities of a state
+"""
 
 from sqlalchemy import (create_engine)
 import sys
