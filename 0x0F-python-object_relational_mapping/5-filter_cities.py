@@ -25,9 +25,9 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
 
-    query1 = "SELECT cities.id, cities.name AS cities_name, states.name AS states_name FROM cities "
-    query2 = "INNER JOIN states on cities.state_id = states.id WHERE states.name = %s"
-    query = query1 + query2
+    query = "SELECT cities.id, cities.name AS cities_name,\
+            states.name AS states_name FROM cities INNER \
+            JOIN states on cities.state_id = states.id WHERE states.name = %s"
 
     cursor.execute(query, (state_name,))
     rows = cursor.fetchall()
